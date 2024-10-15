@@ -1,17 +1,16 @@
-public final class Objecte {
+public final class objecte {
     private String nombre;
     private String apellido;
     private int edad;
-    private static Objecte instanciaUnica;
+    private static objecte instanciaUnica;
 
-    // Constructor privado
-    private Objecte() {
+
+    private objecte() {
     }
 
-    // Método estático para obtener la única instancia (Singleton)
-    public static Objecte getInstancia() {
+    public static objecte getInstancia() {
         if (instanciaUnica == null) {
-            instanciaUnica = new Objecte();
+            instanciaUnica = new objecte();
         }
         return instanciaUnica;
     }
