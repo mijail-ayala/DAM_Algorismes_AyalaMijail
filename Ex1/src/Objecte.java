@@ -1,15 +1,15 @@
-public final class Objecte {
+public final class Persona {
     private String nombre;
     private String apellido;
     private int edad;
-    private static Objecte instanciaUnica;
+    private static Persona instanciaUnica;
 
-    private Objecte() {
+    private Persona() {
     }
 
-    public static Objecte getInstancia() {
+    public static Persona getInstancia() {
         if (instanciaUnica == null) {
-            instanciaUnica = new Objecte();
+            instanciaUnica = new Persona();
         }
         return instanciaUnica;
     }
