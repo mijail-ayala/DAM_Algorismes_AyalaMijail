@@ -4,7 +4,6 @@ public final class objecte {
     private int edad;
     private static objecte instanciaUnica;
 
-
     private objecte() {
     }
 
@@ -15,7 +14,6 @@ public final class objecte {
         return instanciaUnica;
     }
 
-    // Método para inicializar los valores del objeto
     public void configurar(String nombre, String apellido, int edad) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -46,7 +44,7 @@ public final class objecte {
         this.edad = edad;
     }
 
-    // Sobrescribir toString para mostrar la información
+
     @Override
     public String toString() {
         return "Nombre: " + nombre + ", Apellido: " + apellido + ", Edad: " + edad;
